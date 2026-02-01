@@ -35,6 +35,15 @@ press "enter" until you see your green user name or "+----[SHA256]-----+", somet
 #copy public key not private key. do not ever share private key with others.
 code:
 cat ~/.ssh/id_ed25519.pub
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#add ssh key to your github---------------connect git bash to your github account.
+open github -> click your user Profile on your portal right upper -> click "setting" first icon on third block of menu bar. -> click "SSH and GPG keys" on fifth icon of second menu bar on your left hand. ->
+click green icon "New SSH key" -> your title name (whatever decided by yourself) -> copy the content return from code "cat ~/.ssh/id_ed25519.pub". -> click "Add SSH key"
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
