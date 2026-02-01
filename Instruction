@@ -29,7 +29,7 @@ ls ~/.ssh
 
 #create SSH key
 code:
-ssh-keygen -t ed25519 -C "your github register email"
+ssh-keygen -t ed25519 -C "your github register email"                                               #####ed25519是一种key类型，它是目前 SSH 最推荐、最安全、最省心的默认选择
 press "enter" until you see your green user name or "+----[SHA256]-----+", something like that.
 
 #copy public key not private key. do not ever share private key with others.
@@ -85,8 +85,10 @@ ssh -T git@github.com
 git remote -v
 """ you should see<origin  git@github.com:"user name"/"repository name".git (fetch)
                    origin  git@github.com:"user name"/"repository name".git (push)>""""
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Push your local file to remote
 
 
 
