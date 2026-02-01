@@ -1,2 +1,18 @@
-how to use Github
+#Down load Git
+https://git-scm.com/
+
+#check Git installation well
+1. open git bash
+2. type code:
+git --version
+"""you should get <git version 2.XX.X.windows.1> if you use windows system or <git version 2.XX.X.XX??os.1> if you use mac os."""
+
+# create configuration of your id for git
+""" this step tell git who are you by signing your name instead of logging in your account. Later on, when your commit, git will know who do that and document it."""
+type code:
+git config --global user.name  "your name"
+git config --global user.email "your e-mail address"
+
+
+
 
