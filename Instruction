@@ -43,6 +43,20 @@ open github -> click your user Profile on your portal right upper -> click "sett
 click green icon "New SSH key" -> your title name (whatever decided by yourself) -> copy the content return from code "cat ~/.ssh/id_ed25519.pub". -> click "Add SSH key"
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#test whether you have connected sucessfully
+code:
+ssh -T git@github.com
+
+if this is your first time to connect, system will ask you "Are you sure you want to continue connecting?". you must say "yes". and then you will see "Hi xxx! You've successfully authenticated, 
+but GitHub does not provide shell access." . now you sucessfully connect git bash to github.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#connect to repository
+#Case1. if you already have a repository on github.
+# clone your repository ssh code by clicking code 
+
 
 
 
