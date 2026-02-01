@@ -68,7 +68,7 @@ touch README.md                                                           ### if
 git add README.md                                                         ###create a history point to this 
 git commit -m "add README"                                                ###repository. it means that every steps you do in future will be recorded at this point. and commit it with commit note.
 git remote add origin git@github.com:"username"/"repository name".git     ###connect to remote repository
-git branch -M main                                                        ###switch your local branch to main branch
+git branch -M main                                                        ###force rename current branch name as main, and set it as current branch "-M=force"
 git push -u origin main                                                   ###push your local main branch to remote origin/main branch and set it as default associated remote branch. 
                                                                             "origin:remote repository name"  "main: local main branch" "-u = --set-upstream, bulid up the default link relationship between local branch and remote branch"
 #troubleshooting tips:
@@ -88,7 +88,8 @@ git remote -v
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### Push your local file to remote
+### pull all updated files from remote repository beforing Push your local file to remote
+#pull all updated files
 
 
 
