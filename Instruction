@@ -64,20 +64,29 @@ cd "repository name"
 code:
 cd "your project directory"                                               ### locate your project
 git init                                                                  ### initiate your project to be a git repository directory/file
-git add .                                                                 ###create a history point to this 
-git commit -m "initial commit"                                            ###repository. it means that every steps you do in future will be recorded at this point.
+touch README.md                                                           ### if there is no README.md file, create one;else, update the revies time of README.md file.
+git add README.md                                                         ###create a history point to this 
+git commit -m "add README"                                                ###repository. it means that every steps you do in future will be recorded at this point. and commit it with commit note.
 git remote add origin git@github.com:"username"/"repository name".git     ###connect to remote repository
 git branch -M main                                                        ###switch your local branch to main branch
 git push -u origin main                                                   ###push your local main branch to remote origin/main branch and set it as default associated remote branch. 
                                                                             "origin:remote repository name"  "main: local main branch" "-u = --set-upstream, bulid up the default link relationship between local branch and remote branch"
 #troubleshooting tips:
-#check remote address
+"""check remote address"""
+code:
 git remote -v
-##if it is error address, you can change it by following code:
+"""if it is error address, you can change it by following code:"""
 git remote set-url origin git@github.com:"correct user name"/"correct repository name".git
 
-# check which github account your computer have linked to 
+"""check which github account your computer have linked to """
 ssh -T git@github.com
+
+#check whether it is successfully linking
+git remote -v
+""" you should see<origin  git@github.com:"user name"/"repository name".git (fetch)
+                   origin  git@github.com:"user name"/"repository name".git (push)>""""
+
+
 
 
 
