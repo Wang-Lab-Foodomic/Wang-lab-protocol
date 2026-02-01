@@ -97,8 +97,8 @@ code2(recommended):
 git pull --rebase                                                           ###Get remote changes, Re-apply your local commits on top of them and Keeps history linear and readable
 
 code3(explicit):
-git checkout "your target local branch"
-git pull --rebase origin "target remote branch"
+git checkout "your target local branch"                                     ###create/switch to your local target branch
+git pull --rebase origin "target remote branch"                             ###pull files from orgin/target branch to your local target branch
 
 prerequisite code：
 #local branch create：
@@ -111,9 +111,16 @@ git chechout -b "branch name"
 git branch
 
 #remote branch create:
+code1(push just now created branch)
 git push -u origin "branch name"
+
+code2(create branch on github website and synchronization to local branch):
+git fetch origin
+git switch -c "your local branch name" origin/"remote branch name"
+
 #validation code:
 git branch -r
+
 
 
 
