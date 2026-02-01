@@ -120,10 +120,29 @@ git switch -c "your local branch name" origin/"remote branch name"
 
 #validation code:
 git branch -r
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#push your local files to remote
+#look at status of your branches difference between current local and remote one
+code:
+git status
 
+#put files into temporary stage
+git add .                                                                    ###add all modified files to remote
+or
+git add "specific file name"                                                 ###only add specific modified file to remote
 
+#commit
+git commit -m "add xxxx files"
+
+#push to github
+git push --rebase
+
+or
+#if it is your first time to push this brach, the code should be:
+git push -u origin "target branch"
 
 
 
