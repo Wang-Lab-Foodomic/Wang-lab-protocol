@@ -1,3 +1,4 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------
 #Down load Git
 https://git-scm.com/
 
@@ -6,12 +7,38 @@ https://git-scm.com/
 2. type code:
 git --version
 """you should get <git version 2.XX.X.windows.1> if you use windows system or <git version 2.XX.X.XX??os.1> if you use mac os."""
+---------------------------------------------------------------------------------------------------------------------------------------------------
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # create configuration of your id for git
 """ this step tell git who are you by signing your name instead of logging in your account. Later on, when your commit, git will know who do that and document it."""
 type code:
 git config --global user.name  "your name"
 git config --global user.email "your e-mail address"
+
+#check configuration
+git config --global list
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+"""create SSH key""" SSH is 一种“加密的、免密码的远程连接方式”, 用来安全地控制另一台电脑 / 服务器 / GitHub.
+#####check if you have SSH key or not
+code:
+ls ~/.ssh
+""""you should see id_XXXXX if you already had key.if not you should create key for you."""
+
+#create SSH key
+code:
+ssh-keygen -t ed25519 -C "your github register email"
+press "enter" until you see your green user name or "+----[SHA256]-----+", something like that.
+
+#copy public key not private key. do not ever share private key with others.
+code:
+cat ~/.ssh/id_ed25519.pub
+
+
+
+
 
 
 
