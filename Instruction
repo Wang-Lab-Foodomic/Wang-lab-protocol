@@ -55,10 +55,19 @@ but GitHub does not provide shell access." . now you sucessfully connect git bas
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #connect to repository
 #Case1. if you already have a repository on github.
-# clone your repository ssh code by clicking code 
+# clone your repository ssh code by clicking code -> SSH -> Two overlapping small squares. now, you copu URL to your clipboard. back to git bash.
+code:
+git clone "your clipboard"
+cd "repository name"
 
-
-
+#Case2. you already have your project in your computer
+code:
+cd "your project directory"                                               ### locate your project
+git init                                                                  ### initiate your project to be a git repository directory/file
+git add .                                                                 ###create a history point to this 
+git commit -m "initial commit"                                            ###repository. it means that every steps you do in future will be recorded at this point.
+git remote add origin git@github.com:"username"/"repository name".git     ###connect to remote repository
+git branch -M main                                                        ###switch your branch to main branch
 
 
 
