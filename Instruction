@@ -89,7 +89,31 @@ git remote -v
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### pull all updated files from remote repository beforing Push your local file to remote
-#pull all updated files
+#pull all updated files from remote repository
+code1:
+git pull                                                                    ###Fetches new commits from the remote and Merges them into your current branch.
+                                                                               This works only if your branch already has an upstream set (e.g. after git push -u origin main).
+code2(recommended):
+git pull --rebase                                                           ###Get remote changes, Re-apply your local commits on top of them and Keeps history linear and readable
+
+code3(explicit):
+git checkout "your target local branch"
+git pull --rebase origin "target remote branch"
+
+prerequisite code：
+#local branch create：
+code1；
+git switch -c "branch name"
+code2:
+git chechout -b "branch name"
+
+#validation code:
+git branch
+
+#remote branch create:
+git push -u origin "branch name"
+#validation code:
+git branch -r
 
 
 
