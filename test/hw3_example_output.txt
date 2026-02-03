@@ -1,4 +1,4 @@
-35 sequences with 16934 bases read from scaffolds_short.fa
+64 sequences with 444444 bases read from scaffolds_short.fa
 
 >test0_0
 A
